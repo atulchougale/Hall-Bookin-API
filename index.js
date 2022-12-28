@@ -14,6 +14,6 @@ app.get('/', function (req, res) {
     res.send('Homepage : Hall Bookiing API');
   });
   
-  app.use("/api", hallRouter);
+  app.use("/hall", hallRouter);
   
   app.listen(PORT, console.log("Server running on port " + PORT));
